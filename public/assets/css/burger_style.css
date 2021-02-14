@@ -1,0 +1,14 @@
+body{
+    background-color: #ffbf6b;
+}
+.burger-image{
+    height: 200px;
+}
+
+.red{
+    color: red;
+}
+
+.btn{
+    border: 1px solid black;
+}
