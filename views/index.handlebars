@@ -1,0 +1,45 @@
+<img src="./assets/img/burger.png" class="mx-auto d-block burger-image">
+    <h1 class="text-center red">Eat-Da-Burger!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 text-center">
+                {{#each burgers}}
+                    {{#unless devoured}}
+                    <input type="textarea" value="{{id}}. {{burger_name}}" data-burgername="{{burger_name}}" name="burger">
+                        
+                    </input>
+                    {{/unless}}
+                {{/each}}
+            </div>
+            <div class="col-md-2 text-center">
+                {{#each burgers}}
+                <input type="button" value="Devour It!" data-id="{{id}}" data-devoured="{{devoured}}" name="devoured" class="btn">
+                {{/each}}
+            </div>
+            <div class="col-md-3 text-center">
+                <ul class="list-group todo-list">
+                    {{#each burgers}}
+                        {{#if devoured}}
+                        <li class="list-group-item">Eaten Burger</li>
+                        {{/if}}
+                    {{/each}}
+                </ul>
+                
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h2>Add a Burger</h2>
+                <form class="create-form">
+
+                    <div class="form-group">
+                        <input type="text" id="burger" name="name">
+                    </div>
+
+                    <button type="submit">Add Burger</button>
+                </form>
+            </div>
+        </div>
+    </div>
