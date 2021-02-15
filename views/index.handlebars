@@ -6,9 +6,7 @@
             <div class="col-md-3 text-center">
                 {{#each burgers}}
                     {{#unless devoured}}
-                    <input type="textarea" value="{{id}}. {{burger_name}}" data-burgername="{{burger_name}}" name="burger">
-                        
-                    </input>
+                    <input type="textarea" value="{{id}}. {{burger_name}}" data-burgername="{{burger_name}}" name="burger" readonly>
                     {{/unless}}
                 {{/each}}
             </div>
