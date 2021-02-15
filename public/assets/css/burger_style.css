@@ -12,3 +12,9 @@ body{
 .btn{
     border: 1px solid black;
 }
+
+.list-group-item{
+    height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
