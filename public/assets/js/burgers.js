@@ -1,7 +1,7 @@
 $(function() {
     $(".devour").on("click", function(event) {
         event.preventDefault();
-        console.log("Devoured buttton clicked!");
+
         var id = $(this).data("id");
         
         var newDevouredState = {
@@ -22,7 +22,7 @@ $(function() {
     });
     
     $(".create-form").on("submit", function(event) {
-        // Make sure to preventDefault on a submit event.
+        // preventDefault on a submit event.
         event.preventDefault();
         
         var newBurger = {
