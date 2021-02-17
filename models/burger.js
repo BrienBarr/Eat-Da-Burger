@@ -1,5 +1,7 @@
+// Import the orm object
 var orm = require("../config/orm.js");
 
+// Add the methods from the orm object to the burger object
 var burger = {
     selectAll: function(cb) {
       orm.selectAll("burgers", function(res) {
@@ -18,4 +20,5 @@ var burger = {
     }
   };
   
+  // Export the burger object
   module.exports = burger;
