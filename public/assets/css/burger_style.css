@@ -1,10 +1,14 @@
+/* Styling for the body */
 body{
     background-color: #ffbf6b;
 }
+
+/* Styling for the burger image at the top of the page */
 .burger-image{
     height: 200px;
 }
 
+/* Styling for the Eat-Da-Burger! h1 heading */
 .red{
     color: red;
     -webkit-text-stroke-color: black;
@@ -13,10 +17,12 @@ body{
     stroke-width: 1px;
 }
 
+/* Styling for the rows */
 .row{
     margin-top: 40px;
 }
 
+/* Styling for the divs that contain the undevoured burgers */
 .undevoured{
     background-color: wheat;
     border: black solid 1px;
@@ -24,25 +30,26 @@ body{
     height: 50px;
     width: 250px;
     margin-top: 10px;
-    
     word-wrap: break-word;
     display: flex;
     align-items: center;
-    
     line-height: 1.25;
 }
 
+/* Styling for the font awesome hamburger icon */
 .fa-hamburger{
     font-size: 1.5rem;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+/* Styling for the undevoured burger name text within the undevoured divs */
 .undevoured-name{
     padding-left: 20px;
     text-indent: -17px;
 }
 
+/* Styling for the btn class */
 .btn{
     border: 1px solid black;
     height: 50px;
@@ -52,6 +59,7 @@ body{
     position: relative;
 }
 
+/* Styling for the list items that contain the names of the devoured burgers */
 .list-group-item{
     height: 50px;
     margin-top: 10px;
@@ -66,6 +74,7 @@ body{
     line-height: 1.25;
 }
 
+/* Styling for the text input in the form for the new burger name to add */
 #burger{
     height: 50px;
     width: 250px;
